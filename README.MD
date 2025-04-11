@@ -30,37 +30,3 @@ Hook을 사용하면 클래스형 컴포넌트 없이도 React의 다양한 기�
 ```js
 const [state, setState] = useState(initialValue);
 
-# 📌 React Hook - useState()
-
-## 🔍 개요
-
-`useState()`는 React Hook 중 하나로, 함수형 컴포넌트에서 상태(state)를 관리할 수 있도록 해줍니다.  
-React 16.8 버전부터 도입된 Hook 기능으로, 기존의 클래스형 컴포넌트에서 사용하던 `this.state`와 `this.setState`를 대체합니다.
-
----
-
-## 📘 정의
-
-> `useState` is a React Hook that lets you add a state variable to your component.
-
-- 함수형 컴포넌트에서 상태를 정의하고, 해당 상태를 변경할 수 있는 함수를 제공
-- 컴포넌트가 렌더링될 때마다 상태를 유지할 수 있도록 도와줌
-- 변수 각각에 대한 `set` 함수가 따로 존재함
-
----
-
-## 🧩 사용법
-
-```jsx
-import { useState } from 'react';
-
-function MyComponent() {
-  const [state, setState] = useState(initialValue);
-
-  return (
-    <div>
-      <p>{state}</p>
-      <button onClick={() => setState('New Value')}>Change State</button>
-    </div>
-  );
-}
