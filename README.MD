@@ -205,6 +205,7 @@ useEffect(setup, dependencies?);
 | 언마운트 시 실행    | `useEffect(() => { return () => { ... }; }, [])`        | 컴포넌트가 제거될 때 정리 함수 실행 |
 ---
 
+---
 # useMemo()
 
 ## 개념 설명
