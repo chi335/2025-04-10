@@ -175,7 +175,23 @@ const [state, setState] = useState(initialValue);
 | 비동기 특성        | 상태 변경 직후 값이 바로 반영되지 않을 수 있음               | -                                   |
 | 함수형 업데이트    | 이전 상태 값을 기반으로 상태 변경 (안정적 상태 변경)          | `setState(prev => prev + 1)`        |
 | 복잡한 상태 관리   | 상태가 복잡할 경우 useReducer 훅 사용 고려                   | -                                   |
+---
 
+# 🧩 React Hook: useEffect()
+
+## ✅ 개념 설명
+
+- `useEffect`는 React 함수형 컴포넌트에서 **부수 효과(side effect)**를 처리할 수 있게 해주는 Hook입니다.
+- 부수 효과란 컴포넌트의 주요 기능 외에 추가적으로 실행되는 작업을 의미하며, 대표적으로 **데이터 fetching, 구독(subscription), DOM 직접 조작, 타이머 설정** 등이 있습니다.
+- 클래스형 컴포넌트에서 사용하던 `componentDidMount`, `componentDidUpdate`, `componentWillUnmount` 생명주기 메서드를 **대체**합니다.
 
 ---
+
+## 🛠 사용법
+
+```jsx
+useEffect(setup, dependencies?);
+```
+- setup: 실행할 함수
+- dependencies: 의존성 배열 → 특정 값이 변경될 때만 실행
 
