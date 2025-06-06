@@ -218,8 +218,9 @@ useEffect(setup, dependencies?);
 - 의존성 배열을 넣지 않으면 매 렌더링마다 함수가 실행되어 캐싱 효과가 없습니다.
   ```jsx
   const memoizedValue = useMemo(() => computeExpensiveValue(a, b));
-```jsx
+
 - 의존성 배열이 빈 배열 []이라면 컴포넌트가 마운트될 때만 함수가 호출됩니다.
+```jsx
   ```const memoizedValue = useMemo(() => {
   return computeExpensiveValue(a, b);
 }, []);
@@ -241,9 +242,11 @@ useEffect(setup, dependencies?);
 useEffect와 혼동하여 사이드 이펙트를 잘못 처리하는 경우
 ---
 ## 주의 사항
+
 과도한 사용 주의: 모든 값을 memoization 하려고 하면 오히려 성능 저하를 초래할 수 있으므로 꼭 필요한 경우에만 사용하세요.
 
 의존성 배열을 올바르게 지정해야 불필요한 계산을 방지할 수 있습니다.
 
 값을 계산하는 함수는 반드시 순수 함수여야 하며, 외부 값을 변경하거나 외부 값에 의존해서는 안 됩니다.
+
 ---
