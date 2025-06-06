@@ -205,7 +205,6 @@ useEffect(setup, dependencies?);
 | 언마운트 시 실행    | `useEffect(() => { return () => { ... }; }, [])`        | 컴포넌트가 제거될 때 정리 함수 실행 |
 ---
 
----
 # useMemo()
 
 ## 개념 설명
@@ -219,13 +218,12 @@ useEffect(setup, dependencies?);
 - 의존성 배열을 넣지 않으면 매 렌더링마다 함수가 실행되어 캐싱 효과가 없습니다.
   ```jsx
   const memoizedValue = useMemo(() => computeExpensiveValue(a, b));
-  ```
-
+```jsx
 - 의존성 배열이 빈 배열 []이라면 컴포넌트가 마운트될 때만 함수가 호출됩니다.
   ```const memoizedValue = useMemo(() => {
   return computeExpensiveValue(a, b);
 }, []);
- ```
+```
 - 주로 마운트 시에만 계산해야 하는 값에 사용합니다.
 
 ## 사용해야 하는 경우
