@@ -240,7 +240,7 @@ useEffect(setup, dependencies?);
 
 값이 자주 바뀌는 경우 오히려 성능 저하가 발생할 수 있음
 
-'useEffect'와 혼동하여 사이드 이펙트를 잘못 처리하는 경우
+useEffect와 혼동하여 사이드 이펙트를 잘못 처리하는 경우
 
 ---
 ## 주의 사항
