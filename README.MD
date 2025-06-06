@@ -161,7 +161,15 @@ const [state, setState] = useState(initialValue);
 - state: 현재 상태 값
 - setState: 상태를 변경하는 함수
 - initialValue: 상태의 초기 값
+---
 
+# 🧩 React Hook: useState()
+
+## ✅ 개념 설명
+
+- `useState()`는 React에서 **함수형 컴포넌트의 상태(state)를 관리**할 수 있도록 제공하는 **기본 Hook**입니다.
+- 클래스형 컴포넌트의 `this.state`와 `this.setState`를 대체하며, 컴포넌트 내에서 **상태값을 선언하고 변경**할 수 있습니다.
+- 상태가 변경되면 React는 해당 컴포넌트를 **자동으로 리렌더링**합니다.
 
 ---
 
