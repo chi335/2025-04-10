@@ -300,7 +300,9 @@ useEffect와 혼동하여 사이드 이펙트를 잘못 처리하는 경우
 ```jsx
 const ref = useRef(initialValue);
 ```
+
 initialValue: useRef가 초기화될 때 설정할 값입니다. 이 값은 current 프로퍼티에 저장됩니다.
+
 ---
 
 # Custom Hook
