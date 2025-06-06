@@ -158,7 +158,9 @@ React의 훅은 모두 **`use`로 시작하는 함수**입니다.
 const [state, setState] = useState(initialValue);
 ```
 
-
+- state: 현재 상태 값
+- setState: 상태를 변경하는 함수
+- initialValue: 상태의 초기 값
 
 
 ---
